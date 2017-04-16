@@ -25,13 +25,16 @@ define('MODULE', 'app');
 define('DEBUG', true);
 
 if(DEBUG){
+    $whoops = new \Whoops\Rum;
+    $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+    $whoops->register();
     ini_set('display_error', 'On');
 } else{
     ini_set('display_error', 'Off');
 }
 // 加载函数库
 include CORE.'/common/function.php';
-
+var_dump($_SERVER);die;
 // 加载框架核心文件
 include CORE.'/imooc.php';
 

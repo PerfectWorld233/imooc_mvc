@@ -1,0 +1,25 @@
+{
+  "name": "IMOOC PHP",
+  "description": "PHP Framework",
+  "type": "Framework",
+  "keywords": [
+    "PHP", "PHP Framework"
+  ],
+  "require":{
+    "php": ">=5.3.0",
+    "file/whoops": "*",
+    "symfony/var-dumper": "*",
+    "catfan/medoo": "*"
+  },
+
+  "repositories": [
+    "packagist": {
+      "type": "composer",
+      "url": ""
+    },
+    {
+      "packagist": false
+    }
+
+  ]
+}
