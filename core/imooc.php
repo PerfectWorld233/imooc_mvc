@@ -5,7 +5,7 @@
  * Date: 2017/4/16
  * Time: 22:10
  */
-
+namespace core;
 class imooc
 {
     public static $classMap = array();
@@ -22,6 +22,8 @@ class imooc
             include $ctrlfile;
             $ctrl = new $ctrlClass();
             $ctrl->$action();
+        }else{
+            throw new \Exception('找不到控制器'.$ctrlClass);
         }
     }
 

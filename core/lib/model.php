@@ -5,3 +5,10 @@
  * Date: 2017/4/16
  * Time: 22:21
  */
+
+namespace core\lib;
+use core\lib\conf;
+/*class model extends \medoo
+{
+    public
+}*/

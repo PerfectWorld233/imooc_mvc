@@ -24,22 +24,23 @@ define('APP', IMOOC.'/app');
 define('MODULE', 'app');
 define('DEBUG', true);
 
-if(DEBUG){
+/*if(DEBUG){
     $whoops = new \Whoops\Rum;
     $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
     $whoops->register();
     ini_set('display_error', 'On');
 } else{
     ini_set('display_error', 'Off');
-}
+}*/
 // 加载函数库
 include CORE.'/common/function.php';
-var_dump($_SERVER);die;
 // 加载框架核心文件
 include CORE.'/imooc.php';
 
+
+include CORE.'/lib/route.php';
 // 注册自动加载
 // （当我们new一个不存在的类的时候会触发\core\Imooc::load）
-spl_autoload_register('\core\Imooc::load');
+spl_autoload_register('\core\imooc::load');
 
-\core\Imooc::run();
+\core\imooc::run();

@@ -13,13 +13,12 @@
   },
 
   "repositories": [
-    "packagist": {
+    {
       "type": "composer",
-      "url": ""
+      "url": "http://packagist.phpcomposer.com"
     },
     {
       "packagist": false
     }
-
   ]
 }
