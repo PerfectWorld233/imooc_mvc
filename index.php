@@ -23,15 +23,17 @@ define('APP', IMOOC.'/app');
 
 define('MODULE', 'app');
 define('DEBUG', true);
+include "vendor/autoload.php";
 
-/*if(DEBUG){
-    $whoops = new \Whoops\Rum;
+if(DEBUG){
+    $whoops = new \Whoops\Run;
     $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
     $whoops->register();
     ini_set('display_error', 'On');
 } else{
     ini_set('display_error', 'Off');
-}*/
+}
+
 // 加载函数库
 include CORE.'/common/function.php';
 // 加载框架核心文件

@@ -6,12 +6,17 @@
  * Time: 22:18
  */
 namespace app\ctrl;
+use core\lib\model;
+
 class indexCtrl extends \core\imooc
 {
     public function index()
     {
-        p('it is index  controller !!!!');
-       /* $temp =  \core\lib\conf::get('CTRL', 'route');
+        $model = new model();
+        echo 123;die;
+        dump($model);die;
+       /* p('it is index  controller !!!!');
+        $temp =  \core\lib\conf::get('CTRL', 'route');
         print_r($temp);die;
         $data = 'Hello World';
         $title = '视图文件';
